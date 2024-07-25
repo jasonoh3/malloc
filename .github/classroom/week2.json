@@ -1,0 +1,52 @@
+{
+  "tests": [
+    {
+      "name": "testers/mp0-gif - illinify gif",
+      "setup": "make test",
+      "run": "./test -w NoTests 'testers/mp0-gif - illinify gif'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 20
+    },
+    {
+      "name": "tester1",
+      "setup": "make test",
+      "run": "./test -w NoTests 'tester1'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 10
+    },
+    {
+      "name": "tester2",
+      "setup": "make test",
+      "run": "./test -w NoTests 'tester2'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 10
+    },
+    {
+      "name": "tester3",
+      "setup": "make test",
+      "run": "./test -w NoTests 'tester3'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 20
+    },
+    {
+      "name": "tester4",
+      "setup": "make test",
+      "run": "./test -w NoTests 'tester4'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 20
+    },
+    {
+      "name": "tester5",
+      "setup": "make test",
+      "run": "./test -w NoTests 'tester5'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 20
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "tests": [
+    {
+      "name": "00-simple - allocates memory and avoids errors",
+      "setup": "make test",
+      "run": "./test -w NoTests '00-simple - allocates memory and avoids errors'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "01-tutorial - allocates memory and avoid errors",
+      "setup": "make test",
+      "run": "./test -w NoTests '01-tutorial - allocates memory and avoid errors'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "02-simple-reuse-of-free - reuses available free blocks",
+      "setup": "make test",
+      "run": "./test -w NoTests '02-simple-reuse-of-free - reuses available free blocks'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "03-partial-reuse-of-free - reuses available free blocks when possible",
+      "setup": "make test",
+      "run": "./test -w NoTests '03-partial-reuse-of-free - reuses available free blocks when possible'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "04-calloc - calloc zeroes memory",
+      "setup": "make test",
+      "run": "./test -w NoTests '04-calloc - calloc zeroes memory'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "05-realloc-as-free - realloc acts as free with size=0",
+      "setup": "make test",
+      "run": "./test -w NoTests '05-realloc-as-free - realloc acts as free with size=0'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "06-realloc-smaller - realloc moves the contents when reassigning it",
+      "setup": "make test",
+      "run": "./test -w NoTests '06-realloc-smaller - realloc moves the contents when reassigning it'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "07-realloc-moves - realloc moves the contents when reassigning it",
+      "setup": "make test",
+      "run": "./test -w NoTests '07-realloc-moves - realloc moves the contents when reassigning it'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "01-tutorial - including blocking spliting",
+      "setup": "make test",
+      "run": "./test -w NoTests '01-tutorial - including blocking spliting'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 25
+    },
+    {
+      "name": "08-coalescing - Basic Coalescing",
+      "setup": "make test",
+      "run": "./test -w NoTests '08-coalescing - Basic Coalescing'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 10
+    },
+    {
+      "name": "09-coalescing-in-middle - Coalescing in the middle of a segment",
+      "setup": "make test",
+      "run": "./test -w NoTests '09-coalescing-in-middle - Coalescing in the middle of a segment'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 15
+    },
+    {
+      "name": "10-free-lists - Free Lists",
+      "setup": "make test",
+      "run": "./test -w NoTests '10-free-lists - Free Lists'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 25
+    }
+  ]
+}
